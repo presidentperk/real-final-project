@@ -1,0 +1,93 @@
+<script src='http://use.edgefonts.net/de-walpergens-pica.js'></script>
+<style>
+        body{
+            background: linear-gradient(#d9b38c, #e6ccb3);
+        }
+        ul{
+            /*top:0;*/
+            width:100%;
+            list-style-type: none;
+            margin:0;
+            padding:0;
+            overflow: hidden;
+    
+        }
+    
+        li a{
+            display: block;
+    
+            text-align: center;
+            padding: 20px 20px;
+            
+        }
+    .flex-container{
+        display: flex;
+        flex-direction: row;
+        
+    }
+    .home-item{
+        float: left;
+        background-color: transparent;
+        padding-left: 20px;
+        padding-right: 20px;
+        align-items: center;
+    }
+    /*.home-item > p {
+        top: 50px;
+    }*/
+    .flex-container > .nav-link{
+        width: 1000px;
+        margin: 20px;
+        font-family: de-walpergens-pica, serif;
+        text-align: center;
+        text-emphasis: none;
+        color: black;
+    }
+    .nav{
+        float: right;
+        width:10%;
+        background-color: whitesmoke;
+    }
+    .picture{
+        max-width: 300px;
+        max-height: 200px;
+        float: left;
+        padding: 50px, 50px, 50px, 50px;
+    }
+    a:link,a:visited{
+        text-decoration: none;
+        color:black;
+        font-family: de-walpergens-pica, serif;
+    }
+    a:hover,a:active{
+        color:blue;
+        font-family: de-walpergens-pica, serif;
+    }
+    #navbar{
+        position:sticky;
+    }
+    
+</style>
+    <div class="flex-container">
+        <ul id="navbar">
+            
+            <li class="nav"><div class="nav-link">
+                <a href="FullMenu.html" onclick="menuSetup(page1, 1)">Full Menu</a>
+                <div class="sub-nav">
+                    <button onclick="menuSetup(page1,this.innerText)" class='pageSelect'>1</button>
+                    <button onclick="menuSetup(page2,this.innerText)" class='pageSelect'>2</button>
+                    <button onclick="menuSetup(page3,this.innerText)" class='pageSelect'>3</button>
+                </div>
+            </div></li>
+            <li class="nav"><div class="nav-link">
+                <a href="Home.html">Home</a>
+            </div></li>
+        </ul>
+    </div>
+    <div id='menu-items'>
+
+    </div>
+    <div id='content'>
+
+    </div>
+<script src="MenuSetup.js"></script>

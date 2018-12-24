@@ -1,0 +1,107 @@
+
+<script src='http://use.edgefonts.net/de-walpergens-pica.js'></script>
+<script src='HomeSetup.js' type="text/javascript"></script>
+<script src='https://requirejs.org/docs/release/2.3.5/minified/require.js'></script>
+<style>
+    body{
+        background: linear-gradient(#d9b38c, #e6ccb3);
+    }
+    ul{
+        /*top:0;*/
+        width:100%;
+        list-style-type: none;
+        margin:0;
+        padding:0;
+        overflow: hidden;
+
+    }
+
+    li a{
+        display: block;
+
+        text-align: center;
+        padding: 20px 20px;
+        
+    }
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    
+}
+.home-item{
+    float: left;
+    background-color: transparent;
+    padding-left: 20px;
+    padding-right: 20px;
+    align-items: center;
+}
+/*.home-item > p {
+    top: 50px;
+}*/
+.flex-container > .nav-link{
+    width: 1000px;
+    margin: 20px;
+
+    text-align: center;
+    text-emphasis: none;
+    color: black;
+}
+.nav{
+    float: right;
+    width:10%;
+    background-color: whitesmoke;
+}
+a:link,a:visited{
+    text-decoration: none;
+    color:black;
+}
+a:hover,a:active{
+    color:blue;
+}
+#navbar{
+    position:sticky;
+}
+#header{
+    padding-left: 50px;
+    padding-right: 250px;
+    font-family: de-walpergens-pica, serif;
+}
+#logo{
+    position: absolute;
+    top: 90px;
+    right: 15px;
+
+}
+#featured-items{
+    position: absolute;
+    top: 300px;
+    color: transparent;
+    align-items: center;
+}
+
+</style>
+<body>
+<div class="flex-container">
+    <ul id="navbar">
+        
+        <li class="nav"><div class="nav-link">
+            <a href="FullMenu.html">Full Menu</a>
+        </div></li>
+        <li class="nav"><div class="nav-link">
+            <a href="Home.html">Home</a>
+        </div></li>
+    </ul>
+</div>
+<div class="flex-container">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrPNhZ4qbpzqQyWXYkdxsa5XtJX7JWNdTByQSnhhbIl7TpV2aCyg" id="logo">
+    <h1 id="header">Poe's Tavern</h1>
+</div>
+<div id="content">
+
+</div>
+<div class ="flex-container" id="featured-items">
+    <a href="ProductList.html">See our menu</a>
+</div>
+
+
+</body> 
